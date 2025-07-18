@@ -11,6 +11,8 @@ print(iris_dataset.data.shape)
 # ทำเหมือนกันกับ ข้อมูลในแนวแกน y
 # random_state = ตัวควบคุมการสุ่มแบ่งข้อมูล ถ้าเป็น 0 จะสุ่มได้เหมือนเดิมทุกครั้ง แต่ถ้าเป็น 42 หรือ เลขอื่น ข้อมูลจากการแบ่งจะหน้าตาไม่เหมือนเดิม
 x_train , x_test , y_train , y_test = train_test_split(iris_dataset["data"] , iris_dataset["target"] , test_size=0.2, random_state=0) 
+# X (features)	ข้อมูลนำเข้า เช่น ขนาดดอกไม้
+# y (labels/target)	คำตอบที่ต้องการให้โมเดลทาย
 # iris_dataset["data"] เป็นของ แกน x 
 # iris_dataset["target"] เป็นของ แกน y
 # ถ้าไม่ระบุในการแบ่งตัว defalut จะเป็๋น 75% กับ 25%
